@@ -41,7 +41,7 @@ namespace SCAPI {
     // Spawns the specified prefab for target faction or host player's faction if not specified
     public static void Spawn( string prefab, string faction = "" ) {
       Send( new Message {
-        Text = "/sc spawn " + prefab + " " + faction
+        Text = "/sc spawn \"" + prefab + "\" " + faction
       });
     }
 
