@@ -84,7 +84,7 @@ namespace SCAPI {
     // Respawns specified faction optionally onto specified planet. Set remain to true to leave behind loot
     public static void Respawn( string faction = "", string planet = "", bool remain = false ) {
       Send( new Message {
-        Text = "/sc respawn " + faction + " " + planet + (remain ? "-remain" : String.Empty)
+        Text = "/sc respawn " + faction + " " + planet + (remain ? " -remain" : String.Empty)
       });
     }
 
