@@ -17,6 +17,14 @@ namespace SCAPI {
 
     protected static ushort Id = 8008; // Do not change this
 
+    public static void ChatMessage( string sender, string text, string sound = "" ) {
+      Send( new Message {
+        Text = text,
+        Sender = sender,
+        Sound = sound
+      });
+    }
+
     // Toggles debug mode on/off
     public static void Debug() {
       Send( new Message {

@@ -18,8 +18,11 @@ namespace SCAPI {
     [ProtoMember(4)]
     public string Sender {get; set;}
 
+    [ProtoMember(5)]
+    public string Sound {get; set;}
+
     public Message() {
-      Text = Sender = String.Empty;
+      Text = Sender = Sound = String.Empty;
       SteamUserId = 0;
       PlayerID = 0;
     }
